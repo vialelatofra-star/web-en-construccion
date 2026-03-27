@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/layout/Navbar';
+import Hero from '../components/sections/Hero';
+import Footer from '../components/layout/Footer';
+import '../styles/global.css'; 
+---
+
+<Layout title="Indusales - Próximamente">
+  <div class="relative w-screen h-screen overflow-hidden bg-white selection:bg-green-200">
+    <Navbar client:load />
+    
+    <main class="w-full h-full relative">
+      <Hero client:load />
+    </main>
+    
+    <Footer client:load />
+  </div>
+</Layout>
