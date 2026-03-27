@@ -4,6 +4,8 @@ import Navbar from '../components/layout/Navbar';
 import Hero from '../components/sections/Hero';
 import Footer from '../components/layout/Footer';
 import '../styles/global.css'; 
+
+const whatsappNumber = import.meta.env.PUBLIC_WHATSAPP_NUMBER || "573133467572";
 ---
 
 <Layout title="Indusales - Próximamente">
@@ -11,7 +13,7 @@ import '../styles/global.css';
     <Navbar client:load />
     
     <main class="w-full h-full relative">
-      <Hero client:load />
+      <Hero client:load whatsappNumber={whatsappNumber} />
     </main>
     
     <Footer client:load />

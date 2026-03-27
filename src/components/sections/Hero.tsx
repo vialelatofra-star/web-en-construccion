@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
-export default function Hero() {
+interface HeroProps {
+  whatsappNumber?: string;
+}
+
+export default function Hero({ whatsappNumber = "573133467572" }: HeroProps) {
   const [showOutline, setShowOutline] = useState(false);
   const [showSolid, setShowSolid] = useState(false);
   const [showBubble, setShowBubble] = useState(false);
@@ -93,7 +97,7 @@ export default function Hero() {
           </div>
 
           <a 
-            href="https://wa.me/573133467572?text=%C2%A1Hola!%20Estoy%20interesad%40%20en%20recibir%20novedades%20e%20informaci%C3%B3n%20sobre%20Indusales.%20%C2%A1Me%20encantar%C3%ADa%20ser%20el%20primero%20en%20enterarme!" 
+            href={`https://wa.me/${whatsappNumber}?text=%C2%A1Hola!%20Estoy%20interesad%40%20en%20recibir%20novedades%20e%20informaci%C3%B3n%20sobre%20Indusales.%20%C2%A1Me%20encantar%C3%ADa%20ser%20el%20primero%20en%20enterarme!`} 
             target="_blank"
             rel="noopener noreferrer"
             className="animate-cta-combined bg-[#1D9947] hover:bg-[#157936] text-white px-5 sm:px-6 py-1.5 sm:py-2.5 rounded-full font-semibold text-xs sm:text-sm transition-colors cursor-pointer pointer-events-auto flex items-center whitespace-nowrap shadow-sm group"
