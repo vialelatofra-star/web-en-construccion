@@ -37,9 +37,9 @@ export default function Navbar() {
       {/* Casing for the modern "pill" style navbar sin demarcaciones ni cajas. Altura estricta para que el logo se expanda dentro sin cambiar la barra. */}
       <div className="bg-gray-100/30 backdrop-blur-xl border border-white/30 shadow-[0_4px_24px_0_rgba(31,38,135,0.05)] rounded-full px-4 sm:px-6 py-1.5 sm:py-2 flex justify-between items-center transition-all h-12 sm:h-14 relative">
         
-        {/* Indusales a la izquierda. Fuente oscura, gruesa y muy contrastante. */}
-        <div className="flex-shrink-0 flex items-center justify-start w-28 sm:w-48 z-10 pr-4 bg-transparent relative">
-          <span className="text-[#135a24] font-extrabold text-xl sm:text-[1.35rem] tracking-[0.15em] uppercase font-sans drop-shadow-md">
+        {/* Indusales a la izquierda. Fuente oscura, gruesa y muy contrastante. Responsive (pequeño en móvil). */}
+        <div className="flex-shrink-0 flex items-center justify-start w-auto sm:w-48 z-10 pr-2 sm:pr-4 bg-transparent relative">
+          <span className="text-[#135a24] font-extrabold text-[12px] sm:text-[1.35rem] tracking-[0.1em] sm:tracking-[0.15em] uppercase font-sans drop-shadow-md">
             Indusales
           </span>
         </div>
@@ -61,10 +61,10 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Logo original expandido milimétricamente hasta tocar el borde del Navbar */}
-        <div className="flex-shrink-0 flex items-center justify-end w-28 sm:w-48 z-10 pl-4 bg-transparent relative h-full py-0.5">
+        {/* Logo original expandido milimétricamente. Responsivo (pequeño en móvil). */}
+        <div className="flex-shrink-0 flex items-center justify-end w-auto sm:w-48 z-10 pl-2 sm:pl-4 bg-transparent relative h-full py-0.5">
           <img 
-            className="h-full w-auto object-contain drop-shadow-sm mix-blend-multiply" 
+            className="h-5 sm:h-full w-auto object-contain drop-shadow-sm mix-blend-multiply" 
             src="/logo.png" 
             alt="Indusales Colombia S.A.S" 
           />
