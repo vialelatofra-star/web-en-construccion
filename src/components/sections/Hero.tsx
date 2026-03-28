@@ -81,7 +81,7 @@ export default function Hero({ whatsappNumber = "573133467572" }: HeroProps) {
       />
       
       {/* Layer 2: The Floating Bubble */}
-      <div className={`absolute z-10 top-[72%] sm:top-[65%] md:top-[68%] left-1/2 -translate-x-1/2 transform transition-all duration-1000 ease-out w-[92%] sm:w-[88%] max-w-[400px] sm:max-w-[500px] md:max-w-[580px] ${
+      <div className={`absolute z-10 top-[64%] sm:top-[65%] md:top-[68%] left-1/2 -translate-x-1/2 transform transition-all duration-1000 ease-out w-[92%] sm:w-[88%] max-w-[400px] sm:max-w-[500px] md:max-w-[580px] ${
         showBubble ? 'translate-y-0 opacity-100 scale-100' : 'translate-y-8 opacity-0 scale-95'
       }`}>
         <div className="bg-white/70 backdrop-blur-xl rounded-full shadow-2xl border border-white/20 flex items-center justify-between pl-4 sm:pl-7 pr-1 sm:pr-1.5 py-1 sm:py-1.5 min-h-[42px] sm:min-h-[50px] w-full gap-1 sm:gap-2">
@@ -111,7 +111,7 @@ export default function Hero({ whatsappNumber = "573133467572" }: HeroProps) {
       </div>
 
       {/* Layer 4: UI overlay */}
-      <div className="absolute top-[28%] sm:top-[42%] left-[52%] sm:left-[53%] -translate-x-1/2 z-30 pointer-events-none flex justify-center w-max px-4">
+      <div className="absolute top-[42%] sm:top-[42%] left-[52%] sm:left-[53%] -translate-x-1/2 z-30 pointer-events-none flex justify-center w-max px-4">
         <div className="relative w-full">
           <div className={`absolute top-0 left-0 w-full transition-all duration-[600ms] ease-out ${
              showSolid 
